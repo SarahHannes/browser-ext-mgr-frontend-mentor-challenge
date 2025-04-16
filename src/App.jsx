@@ -11,7 +11,7 @@ function App() {
   });
 
   // states
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [dataState, setDataState] = useState(dataObj);
   const [filterExt, setFilterExt] = useState("all");
 
