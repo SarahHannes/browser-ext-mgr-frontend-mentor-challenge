@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@layer {
+  html {
+    font-family: "Noto Sans", sans-serif;
+  }
+}
+
+@theme {
+  --color-light1: #ebf2fc;
+  --color-light2: #eef8f9;
+
+  --color-dark1: #040918;
+  --color-dark2: #091540;
+
+  --inset-shadow-md: 1px 1px 10px 0 rgba(214, 226, 245, 1);
+  --inset-shadow-sm: 0 0 3px 1px rgba(214, 226, 245, 1);
+}
+
+:root {
+  --toggle-w: 50px;
+  --toggle-h: calc(var(--toggle-w) / 2);
+  --toggle-br: calc(var(--toggle-h) / 2);
+
+  --toggle-fill-transition: background 0.2s;
+  --toggle-fill-unchecked-hw: calc(var(--toggle-h) - 5px);
+
+  --white-filter: invert(100%) sepia(100%) saturate(200%) hue-rotate(300deg)
+    brightness(100%) contrast(100%);
+  --red-filter: invert(7%) sepia(506%) saturate(90%) hue-rotate(9deg)
+    brightness(206%) contrast(900%);
+}
